@@ -27,8 +27,10 @@ Before you begin, ensure you have the following prerequisites in place:
 - Azure Virtual Machine
 - Internet Information Services (IIS)
 - PHP Manager
+- VC Redist
 - MySQL
 - Heidi SQL
+- Rewrite Module
 - osTicket - download the latest version of osTicket from the [official website.](https://osticket.com/)
 - Access to Admin Privileges: Required for setting up server configurations.
 - Link to downloads: https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
