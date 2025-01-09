@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
+<h1>osTicket - Prerequisites and Installation (including creating VM in Azure) </h1>
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
@@ -70,6 +70,28 @@ Step 1: Create a Virtual Machine in Azure:
 
 ![Screenshot 2025-01-07 064816](https://github.com/user-attachments/assets/0f0c86c3-ccd4-4f12-aaed-3962ef5fa774)
 
+Step 2: Connect to Your VM
+ 1) Connect to the VM:
+- Open in Azure Virtual Machines section
+- Copy Public IP adress
+- Go to Windows Search Tab, open Remote Desktop Connection and paste IP adress and press connect
 
+![Screenshot 2025-01-09 063602](https://github.com/user-attachments/assets/67d6be5f-612c-451f-86fa-da776aaf227c)
 
+- Click Use different account
+- Type in your Username and Password which you create durring creating your VM in Azure
+- Follow next easy steps
+
+![Screenshot 2025-01-09 062853](https://github.com/user-attachments/assets/e56bba28-8e61-4a21-85e1-e6e727b00cef)
+
+![Screenshot 2025-01-09 064717](https://github.com/user-attachments/assets/7174b3b3-067d-42f8-928f-9cb2a564c36b)
+
+![Screenshot 2025-01-09 065056](https://github.com/user-attachments/assets/69c4fae5-86ce-4bcb-9eed-c7ccc63f6b17)
+
+Well done! We connect to our VM! :)
+
+Step 3: Install osTicket
+1. Download osTicket
+Visit the official osTicket website and download the installation files.
+Transfer the files to your VM (e.g., using SCP for Linux or RDP file transfer for Windows).
 
