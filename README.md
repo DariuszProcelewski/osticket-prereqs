@@ -24,12 +24,15 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 Before you begin, ensure you have the following prerequisites in place:
 
-- Web Server: Apache or IIS installed on your server.
-- PHP: Version 7.4 or higher.
-- MySQL Database: MySQL version 5.5 or later, or MariaDB equivalent.
-- osTicket Installation Files: Download the latest version of osTicket from the [official website.](https://osticket.com/)
+- Azure Virtual Machine
+- Internet Information Services (IIS)
+- PHP Manager
+- MySQL
+- Heidi SQL
+- osTicket - download the latest version of osTicket from the [official website.](https://osticket.com/)
 - Access to Admin Privileges: Required for setting up server configurations.
-
+- Link to downloads: https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
+  
 <h2>Installation Steps</h2>
 
 Step 1: Create a Virtual Machine in Azure:
