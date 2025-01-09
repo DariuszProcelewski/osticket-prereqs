@@ -90,8 +90,117 @@ Step 2: Connect to Your VM
 
 Well done! We connect to our VM! :)
 
-Step 3: Install osTicket
-1. Download osTicket
+<h2>Step 3: Install osTicket</h2>
+Download osTicket
 Visit the official osTicket website and download the installation files.
 Transfer the files to your VM (e.g., using SCP for Linux or RDP file transfer for Windows).
 
+<h2>Enabling IIS</h2>
+
+Before beginning the installation, ensure that Internet Information Services (IIS) is enabled, as osTicket requires it to function. To enable IIS:
+
+1) Open the Control Panel.
+ 
+2) Navigate to Programs > Turn Windows Features On or Off.
+
+4) Expand Internet Information Services and Web Management Tools, then enable IIS Management Console.
+
+5) Expand World Wide Web Services > Application Development Features, enable CGI, and click OK to confirm.
+
+<h2>Installing PHP Manager and Rewrite Module</h2>
+
+1) Download and install PHP Manager for IIS (PHPManagerforIIS_V1.5.0.msi) from the installation files.
+ 
+2) Download and install the Rewrite Module (rewrite_amd64_en-US.msi) after completing the PHP Manager installation.
+   
+<h2>Setting Up PHP</h2>
+
+1) Create a new folder: C:\PHP on the C: drive.
+ 
+2) Extract the contents of the php-7.3.8-nts-Win32-VC15-x86.zip file (from the installation files) into the C:\PHP folder.
+
+<h2>Installing Visual C++ Redistributable</h2>
+
+- Download and install VC_redist.x86.exe from the installation files.
+
+<h2>Installing MySQL</h2>
+
+1) Download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the installation files.
+
+2) During the setup wizard:
+   
+ - Accept the license agreement.
+ - Select Typical Install and proceed with the installation.
+   
+3) Launch the Configuration Wizard:
+   
+ - Select Standard Configuration.
+ - Choose Install as Windows Service and ensure Launch MySQL Server Automatically is checked.
+ - Use root as the username and Password1 as the password (for this lab)
+   
+4) Complete the configuration.
+
+<h2>Configuring IIS for osTicket</h2>
+
+1) Open IIS as an administrator and select PHP Manager.
+ 
+2) In PHP Manager, choose Register New PHP Version and locate the php-cgi.exe file in the C:\PHP folder.
+ 
+3) After registering, reload the IIS server from the management console.
+
+<h2>Preparing osTicket Files</h2>
+
+1) Download osTicket v1.15.8 from the installation files.
+ 
+2) Extract the "upload" folder to C:\inetpub\wwwroot.
+
+3) Rename the "upload" folder to osTicket.
+ 
+4) Reload the IIS server.
+
+<h2>Enabling PHP Extensions</h2>
+
+1) In IIS, navigate to Sites > Default > osTicket.
+
+2) Click *Browse :80, which will display the osTicket installation page.
+
+3) Return to IIS, open PHP Manager, and select Enable or Disable an Extension.
+ 
+4) Enable the following extensions:
+
+ - php_imap.dll
+ - php_intl.dll
+ - php_opcache.dll
+
+<h2>Configuring osTicket Files</h2>
+
+1) Navigate to C:\inetpub\wwwroot\osTicket\include.
+
+2) Rename ost-sampleconfig.php to ost-config.php.
+
+3) Update file permissions:
+   
+ - Right-click ost-config.php and open Properties.
+ - Disable inheritance, remove all permissions, and set new permissions: Everyone with Full Control.
+
+<h2>Setting Up the Database</h2>
+
+1) Download and install HeidiSQL from the installation files.
+
+2) Open HeidiSQL, create a new session using the MySQL credentials (root/Password1).
+ 
+3) In the new session, right-click Unnamed and create a new database named osTicket.
+
+<h2>Finalizing osTicket Installation</h2>
+
+1) Return to the osTicket installation page in the browser.
+
+2) Enter the required details to configure osTicket. Use the database credentials created earlier.
+ 
+3) Once installation is complete, perform the following cleanup steps:
+
+ - Delete the setup folder from C:\inetpub\wwwroot\osTicket.
+ - Update permissions for ost-config.php in C:\inetpub\wwwroot\osTicket\include: remove Full Control for Everyone and set it to Read-Only.
+
+<h2>osTicket Ready!</h2>
+osTicket is now successfully installed and ready for use. This setup was used to understand the basics of ticketing systems and their role in IT support. It provides a foundation for managing and resolving IT issues effectively through a structured ticketing process.
