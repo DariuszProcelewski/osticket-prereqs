@@ -31,7 +31,7 @@ Before you begin, ensure you have the following prerequisites in place:
 - MySQL
 - Heidi SQL
 - Rewrite Module
-- osTicket - download the latest version of osTicket from the [official website.](https://osticket.com/)
+- osTicket - the latest version of osTicket from the [official website.](https://osticket.com/)
 - Access to Admin Privileges: Required for setting up server configurations.
 - Link to downloads: https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
   
@@ -98,7 +98,7 @@ Well done! We connect to our VM! :)
 <h2>Step 3: Install osTicket</h2>
 Download osTicket
 Visit the official osTicket website and download the installation files.
-Transfer the files to your VM (e.g., using SCP for Linux or RDP file transfer for Windows).
+Link to downloads: https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 
 <h2>Enabling IIS</h2>
 
@@ -111,22 +111,35 @@ Before beginning the installation, ensure that Internet Information Services (II
 4) Expand Internet Information Services and Web Management Tools, then enable IIS Management Console.
 
 5) Expand World Wide Web Services > Application Development Features, enable CGI, and click OK to confirm.
+   
+   ![Screenshot 2025-01-10 062811](https://github.com/user-attachments/assets/9c64b5b7-b4a4-42b5-8def-3bb97879b1c7)
+
 
 <h2>Installing PHP Manager and Rewrite Module</h2>
 
-1) Download and install PHP Manager for IIS (PHPManagerforIIS_V1.5.0.msi) from the installation files.
+1) Install PHP Manager for IIS (PHPManagerforIIS_V1.5.0.msi) from the installation files.
+
+   ![Screenshot 2025-01-10 063324](https://github.com/user-attachments/assets/b6448487-4b8b-4f8c-83b1-9ee427f63539)
+
  
-2) Download and install the Rewrite Module (rewrite_amd64_en-US.msi) after completing the PHP Manager installation.
+3) Install the Rewrite Module (rewrite_amd64_en-US.msi) after completing the PHP Manager installation.
+   
+![Screenshot 2025-01-10 063437](https://github.com/user-attachments/assets/0fa1d8fb-2d1c-41cc-85f4-bfbbcb8fb5ec)
+
+   
    
 <h2>Setting Up PHP</h2>
 
 1) Create a new folder: C:\PHP on the C: drive.
  
 2) Extract the contents of the php-7.3.8-nts-Win32-VC15-x86.zip file (from the installation files) into the C:\PHP folder.
+   
+   ![Screenshot 2025-01-10 064036](https://github.com/user-attachments/assets/50a2a9f7-fde3-497a-a216-c3fffbc301f4)
+
 
 <h2>Installing Visual C++ Redistributable</h2>
 
-- Download and install VC_redist.x86.exe from the installation files.
+- Install VC_redist.x86.exe from the installation files.
 
 <h2>Installing MySQL</h2>
 
