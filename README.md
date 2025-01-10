@@ -270,11 +270,15 @@ After refreshing browser we can see more features are available now.
  ![Screenshot 2025-01-10 213941](https://github.com/user-attachments/assets/7c460982-1ebc-46aa-9883-f01c7ce29b2c)
 ![Screenshot 2025-01-10 214317](https://github.com/user-attachments/assets/0fba8545-3bfb-4ab3-a1a8-cf8737667ce5)
 ![Screenshot 2025-01-10 215226](https://github.com/user-attachments/assets/53f9eaf0-5e8a-4ce8-9236-a1d9d8d9ca2b)
+![image](https://github.com/user-attachments/assets/1b60473f-e2d1-4497-ae1e-399bb6f78dd7)
 
-3) Once installation is complete, perform the following cleanup steps:
+3) Once installation is complete, if you want perform the following cleanup steps:
 
  - Delete the setup folder from C:\inetpub\wwwroot\osTicket.
  - Update permissions for ost-config.php in C:\inetpub\wwwroot\osTicket\include: remove Full Control for Everyone and set it to Read-Only.
 
 <h2>osTicket Ready!</h2>
 osTicket is now successfully installed and ready for use. This setup was used to understand the basics of ticketing systems and their role in IT support. It provides a foundation for managing and resolving IT issues effectively through a structured ticketing process.
+
+Browse to your help desk login page: http://localhost/osTicket/scp/login.php
+End Users osTicket URL: http://localhost/osTicket/ 
