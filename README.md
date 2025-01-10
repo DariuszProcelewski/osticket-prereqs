@@ -162,8 +162,13 @@ Before beginning the installation, ensure that Internet Information Services (II
    
  - Select Standard Configuration.
  - Choose Install as Windows Service and ensure Launch MySQL Server Automatically is checked.
- - Use root as the username and Password1 as the password (for this lab)
+ - Use root as the username and root11 as the password (for this lab)
    
+   ![Screenshot 2025-01-10 065718](https://github.com/user-attachments/assets/2d7a0ca1-f1aa-4785-be8e-5b2eec6add6c)
+![Screenshot 2025-01-10 065823](https://github.com/user-attachments/assets/99e7a91c-740b-4476-a4c1-02d8fa42de7e)
+![Screenshot 2025-01-10 070307](https://github.com/user-attachments/assets/1042b267-6336-4ef0-9e87-c770b3c778ca)
+
+
 4) Complete the configuration.
 
 <h2>Configuring IIS for osTicket</h2>
