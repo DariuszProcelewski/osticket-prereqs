@@ -281,4 +281,5 @@ After refreshing browser we can see more features are available now.
 osTicket is now successfully installed and ready for use. This setup was used to understand the basics of ticketing systems and their role in IT support. It provides a foundation for managing and resolving IT issues effectively through a structured ticketing process.
 
 Browse to your help desk login page: http://localhost/osTicket/scp/login.php
+
 End Users osTicket URL: http://localhost/osTicket/ 
