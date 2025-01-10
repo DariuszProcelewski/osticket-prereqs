@@ -183,16 +183,26 @@ Before beginning the installation, ensure that Internet Information Services (II
  ![Screenshot 2025-01-10 205045](https://github.com/user-attachments/assets/864285dc-6e09-4649-9a44-b4d525632af2)
 
 5) After registering, reload the IIS server from the management console.
+   
+![Screenshot 2025-01-10 205610](https://github.com/user-attachments/assets/2ed8863c-d72b-4d6d-9596-5a6cead20737)
 
 <h2>Preparing osTicket Files</h2>
 
 1) Download osTicket v1.15.8 from the installation files.
- 
-2) Extract the "upload" folder to C:\inetpub\wwwroot.
+ ![image](https://github.com/user-attachments/assets/cf84f4ba-06fa-446f-8532-86946a602fac)
 
-3) Rename the "upload" folder to osTicket.
- 
-4) Reload the IIS server.
+2) Extract the "upload" folder to C:\inetpub\wwwroot.
+   
+![Screenshot 2025-01-10 210442](https://github.com/user-attachments/assets/8527ead0-8cc4-4bc1-a51b-23330cc15831)
+
+4) Rename the "upload" folder to "osTicket" .
+   
+ ![Screenshot 2025-01-10 210725](https://github.com/user-attachments/assets/4b3c0cd6-48cc-4dfc-857f-779eb67c4cd8)
+
+6) Reload the IIS server.
+
+   ![Screenshot 2025-01-10 210936](https://github.com/user-attachments/assets/57e06569-2bda-4b88-acd0-67743ec2ec68)
+
 
 <h2>Enabling PHP Extensions</h2>
 
