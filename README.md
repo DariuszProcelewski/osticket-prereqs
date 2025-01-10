@@ -278,7 +278,9 @@ After refreshing browser we can see more features are available now.
  - Update permissions for ost-config.php in C:\inetpub\wwwroot\osTicket\include: remove Full Control for Everyone and set it to Read-Only.
 
 <h2>osTicket Ready!</h2>
+
 osTicket is now successfully installed and ready for use. This setup was used to understand the basics of ticketing systems and their role in IT support. It provides a foundation for managing and resolving IT issues effectively through a structured ticketing process.
+
 
 Browse to your help desk login page: http://localhost/osTicket/scp/login.php
 
