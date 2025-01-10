@@ -146,7 +146,7 @@ Before beginning the installation, ensure that Internet Information Services (II
 <h2>Installing MySQL</h2>
 
 1) Install MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the installation files.
-2) 
+   
 ![Screenshot 2025-01-10 064712](https://github.com/user-attachments/assets/614e6bf3-2842-4a59-84f6-016efddd1a93)
 
 3) During the setup wizard:
@@ -174,10 +174,15 @@ Before beginning the installation, ensure that Internet Information Services (II
 <h2>Configuring IIS for osTicket</h2>
 
 1) Open IIS as an administrator and select PHP Manager.
- 
-2) In PHP Manager, choose Register New PHP Version and locate the php-cgi.exe file in the C:\PHP folder.
- 
-3) After registering, reload the IIS server from the management console.
+
+![Screenshot 2025-01-10 204639](https://github.com/user-attachments/assets/a1970842-22e1-4203-a5c3-c638008cd723)
+![image](https://github.com/user-attachments/assets/a02b6b53-814b-454c-a356-20af5672774e)
+
+3) In PHP Manager, choose Register New PHP Version and locate the php-cgi.exe file in the C:\PHP folder.
+   
+ ![Screenshot 2025-01-10 205045](https://github.com/user-attachments/assets/864285dc-6e09-4649-9a44-b4d525632af2)
+
+5) After registering, reload the IIS server from the management console.
 
 <h2>Preparing osTicket Files</h2>
 
