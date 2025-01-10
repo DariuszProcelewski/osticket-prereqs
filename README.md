@@ -140,16 +140,24 @@ Before beginning the installation, ensure that Internet Information Services (II
 <h2>Installing Visual C++ Redistributable</h2>
 
 - Install VC_redist.x86.exe from the installation files.
+  
+![Screenshot 2025-01-10 064455](https://github.com/user-attachments/assets/77c350b0-9707-4034-9449-37d5cf75bc43)
 
 <h2>Installing MySQL</h2>
 
-1) Download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the installation files.
+1) Install MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the installation files.
+2) 
+![Screenshot 2025-01-10 064712](https://github.com/user-attachments/assets/614e6bf3-2842-4a59-84f6-016efddd1a93)
 
-2) During the setup wizard:
+3) During the setup wizard:
    
  - Accept the license agreement.
- - Select Typical Install and proceed with the installation.
+ - Select Typical Install and proceed with the installation after launch the Configuration Wizard
    
+![Screenshot 2025-01-10 064827](https://github.com/user-attachments/assets/d87f9a83-daa3-4bc6-9cb7-afbeb5b32a8f)
+
+ ![Screenshot 2025-01-10 064957](https://github.com/user-attachments/assets/2c4335c1-3f3b-4707-8640-166c35471d0a)
+
 3) Launch the Configuration Wizard:
    
  - Select Standard Configuration.
